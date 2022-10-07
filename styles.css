@@ -78,7 +78,18 @@
     background-color: #aaa;
     width: 100%;
     padding: 20px;
+    
+    ;
   }
+
+   /* Small image */
+   .smallimg {
+
+    width: 20%;
+    padding: 20px;
+    
+    ;
+  } 
   
   /* Footer */
   .footer {
