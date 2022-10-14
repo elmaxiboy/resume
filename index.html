@@ -33,17 +33,68 @@
     <div class="fakeimg" style="height:60px;">Image</div>
   </div>
   <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
+    <div class="row">
+    <div class="navbar">
+      <button  id="btn_personal_1" onclick="showButtonDiv(id, 3)"/>Work Experience<br>
+        <button   id="btn_personal_2" onclick="showButtonDiv(id, 3)"/>Education and Training<br>
+        <button  id="btn_personal_3" onclick="showButtonDiv(id, 3)"/>Skills and Hobbies<br>
+    </div>
+    </div>
+
+    <div id="personal_1" hidden="hidden">
+
+      <h1>Work Experience</h1>
+    <h2>IT CONSULTANT – PRACTIA GLOBAL</h2>
+    <h5>29/12/2020 – CURRENT – Santiago, Chile</h5>
     <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Implementing automation solutions at the Associate's Digital Experience area in Walmart in order to
+      enhance their daily working process. This is achieved by a series of tasks that consist of scouting business
+      processes with high automation potential. Designing, developing and implementing the solutions, combining
+      different tools and frameworks if needed. Collecting data for visualization and monitoring of the business's
+      performance via BI dashboards.</p>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
+    <h2>RPA DEVELOPER – SISUA DIGITAL</h2>
+    <h5>29/10/2018 – 28/11/2020 – Santiago, Chile </h5>
     <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Implementing automation solutions for different clients in the energy, retail and scientific research market in
+      order to lower operational costs and efficiently assign productive resources. The main responsability was
+      developing RPA (robotic process automation) bots, structuring the business data involved in the process and
+      building BI dashboards for keeping track of several business metrics</p>
+    <br>
+    <h2>QUALITY ASSURANCE INTERN – SONDA </h2>
+    <h5>30/11/2017 – 27/02/2018 – Santiago, Chile </h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Testing and verifying the correct execution of the features programmed in the context of enhancing the
+      payment system of the public transport in Santiago using contactless smart cards.</p>
+    <br>
+    <h2>ENTREPRENEUR LEADER – APRENDO EMPRENDO </h2>
+    <h5>30/06/2016 – 29/11/2017 – Santiago, Chile </h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Visiting highschools in the metropolitan region of Chile with the mission of encouraging young students to
+      take part of an entrepreneurial school contest. Giving talks about different personal entrepreneuring
+      experiences and the key aspects of the process. At the end of the contest a final was carried out with the
+      students that presented the most outstanding ideas, hence effective communication workshops were
+      implemented for them.</p>
+    <br>
+    <h2>PROJECT MANAGER – UNIVERSIDAD DE CHILE</h2>
+    <h5>27/02/2015 – 29/12/2017 – Santiago, Chile</h5>
+    <div class="fakeimg" style="height:200px;">Image</div>
+    <p>Leading an engineering student's team in the developing of a mobile application for reporting crime and
+      incidents within the area of the university campus. The app was sucessfully implemented during one
+      semester and obtained the first prize in the "Safe City" tech challenge organized by Sonda in 2016.<a href="https://www.linkedin.com/in/maximiliano-escobar-viegas-118804136/overlay/1597857697002/single-media-viewer?type=DOCUMENT&profileId=ACoAACE5G6QBukpY6puYIInJ-SCee0MQ_NfxD_Q&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BJyfchgH5QniFZgtVbszREw%3D%3D"> Link to
+        the article in a local newspaper.</a></p>
+    <br>
+
+    </div>
+
+    <div id="personal_2" hidden="hidden">
+      <p> holi</p>
+    </div>
+
+    <div id ="personal_3" hidden="hidden">
+      <p> skillllllllllsssss</p>
+    </div>
+    
   </div>
 </div>
 
@@ -51,5 +102,36 @@
   <h2>Footer</h2>
 </div>
 
+
+<script>
+
+  function showButtonDiv(id,numberOfButtons){
+    
+    const displayDiv= id.split("_")[1] +"_" +id.split("_")[2]
+    document.getElementById(displayDiv).removeAttribute("hidden")
+    console.log(displayDiv+", está siendo mostrado")
+  
+    for (x=1;x<=numberOfButtons;x++) {
+          let thisDiv = id.split("_")[1]+"_"+x;
+          
+      if (document.getElementById(thisDiv).getAttribute("hidden")!="hidden") {
+
+        console.log(displayDiv+", YA está siendo mostrado")
+         
+          }
+      if (displayDiv!=thisDiv) {
+         document.getElementById(thisDiv).setAttribute("hidden","hidden");
+         console.log(thisDiv+", ha sido ocultado")
+           }
+      }
+      return false;
+  
+  }
+  
+  </script>
+
 </body>
+
+
+
 </html>
