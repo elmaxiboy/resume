@@ -151,4 +151,9 @@
   text-align:center;
   padding:5px;
   background: #ffffff;
-  color: #313030;
+  color: #313030;}
+
+.youtube-thumbnail {
+  width: 100%;
+  padding: 20px;
+}
