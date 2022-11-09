@@ -33,7 +33,7 @@ function showButtonDiv(className, id){
                 
                 videos.forEach(video => {
 
-                    let videoThumbnail = video.snippet.thumbnails.medium.url;
+                    let videoThumbnail = video.snippet.thumbnails.high.url;
                     let videoUrl= "https://www.youtube.com/watch?v="+video.id.videoId ;
                     let videoTitle = video.snippet.title
                     interestingStuffContainer=document.querySelector(".interesting-stuff");
