@@ -1,55 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Page Title</title>
+<title>Mi nombre es Max</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"  href="styles.css"  />
+<script type="text/javascript" src="scripts.js"></script>
 </head>
 <body>
 
 <div class="header">
-    <div class="enlargetext"><h1>Max Escobar Viegas</h1></div>
-  <p>Quién es??</p>
+    <div class="enlargetext"><h1>Mi nombre es Max</h1></div>
+  <p>Wazup??</p>
 </div>
 
 <div class="navbar">
-  <a href="media.html">Media</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
+  <a href="media.html">Max</a>
+  <a href="index.html">CV</a>
+  <a href="maxiboy.html">Maxiboy</a>
   <a href="#" class="right">Link</a>
 </div>
 
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
-    <h5>Photo of me:</h5>
     <img class= smallimg src="images/image_1.JPG" >
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+    <p>Collecting memories since '95. I spend most of my time doing things that I don't completely understand. To control my expectations, I tend to think that everything is a Proof of Concept of something bigger (or smaller). When I don't know what else to do, I plan a trip or write a song.</p>
+    <h3>This might interest you:</h3>
+
+    <div class="interesting-stuff">
+
+
+    </div>
+
   </div>
   <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Dec 7, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="row">
+    <div class="navbar">
+      <button class="btn_personal"  id="work" onclick="showButtonDiv(this.className, this.id)"/>Work Experience<br>
+        <button  class="btn_personal" id="education" onclick="showButtonDiv(this.className, this.id)"/>Education and Training<br>
+        <button  class="btn_personal" id="skills" onclick="showButtonDiv(this.className,this.id)"/>Skills and Hobbies<br>
+    </div>
+    </div>
+
+    <div class="div_personal" id="work">
+
+    <h1>Work Experience</h1>
+    <h2>IT CONSULTANT – PRACTIA GLOBAL</h2>
+    <h5>29/12/2020 – CURRENT – Santiago, Chile</h5>
+   
+    <p>Implementing automation solutions at the Associate's Digital Experience area in Walmart in order to
+      enhance their daily working process. This is achieved by a series of tasks that consist of scouting business
+      processes with high automation potential. Designing, developing and implementing the solutions, combining
+      different tools and frameworks if needed. Collecting data for visualization and monitoring of the business's
+      performance via BI dashboards.</p>
     <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2017</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <h2>RPA DEVELOPER – SISUA DIGITAL</h2>
+    <h5>29/10/2018 – 28/11/2020 – Santiago, Chile </h5>
+   
+    <p>Implementing automation solutions for different clients in the energy, retail and scientific research market in
+      order to lower operational costs and efficiently assign productive resources. The main responsability was
+      developing RPA (robotic process automation) bots, structuring the business data involved in the process and
+      building BI dashboards for keeping track of several business metrics</p>
+    <br>
+    <h2>QUALITY ASSURANCE INTERN – SONDA </h2>
+    <h5>30/11/2017 – 27/02/2018 – Santiago, Chile </h5>
+   
+    <p>Testing and verifying the correct execution of the features programmed in the context of enhancing the
+      payment system of the public transport in Santiago using contactless smart cards.</p>
+    <br>
+    <h2>ENTREPRENEUR LEADER – APRENDO EMPRENDO </h2>
+    <h5>30/06/2016 – 29/11/2017 – Santiago, Chile </h5>
+   
+    <p>Visiting highschools in the metropolitan region of Chile with the mission of encouraging young students to
+      take part of an entrepreneurial school contest. Giving talks about different personal entrepreneuring
+      experiences and the key aspects of the process. At the end of the contest a final was carried out with the
+      students that presented the most outstanding ideas, hence effective communication workshops were
+      implemented for them.</p>
+    <br>
+    <h2>PROJECT MANAGER – UNIVERSIDAD DE CHILE</h2>
+    <h5>27/02/2015 – 29/12/2017 – Santiago, Chile</h5>
+   
+    <p>Leading an engineering student's team in the developing of a mobile application for reporting crime and
+      incidents within the area of the university campus. The app was sucessfully implemented during one
+      semester and obtained the first prize in the "Safe City" tech challenge organized by Sonda in 2016.<a href="https://www.linkedin.com/in/maximiliano-escobar-viegas-118804136/overlay/1597857697002/single-media-viewer?type=DOCUMENT&profileId=ACoAACE5G6QBukpY6puYIInJ-SCee0MQ_NfxD_Q&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BJyfchgH5QniFZgtVbszREw%3D%3D">Link to
+        the article in a local newspaper.</a></p>
+
+
+    </div>
+
+    <div class="div_personal" id="education" hidden="hidden">
+    <h1>Education and Training</h1>
+    <h2>INDUSTRIAL ENGINEER – Universidad de Chile</h2>
+    <h5>28/02/2014 – 22/12/2020 – Santiago, Chile</h5>
+   
+    <p>Address Beauchef 850, Santiago, Chile. <a href="https://www.dii.uchile.cl/~webpgrado2/plan-de-estudios/malla-curricular/">Link to Degree´s curriculum.</a></p>
+    <br>
+    <h2>RESOLVE LEARNING PROGRAM'S ATTENDEE – Singularity University</h2>
+    <h5>30/10/2016 – 13/11/2016 – Santa Clara, United States</h5>
+   
+    <p>Address: 2831 Mission College Blvd, Santa Clara, United States. <a href="https://www.su.org/">Link to program details.</a></p>
+    <br>
+    <h2>BUSINESS ADMINISTRATION INTERNATIONAL STUDENT – Universitat Politècnica de València </h2>
+    <h5>30/01/2016 – 28/06/2016 – València, Spain</h5>
+   
+    <p>Address Camí de Vera , València, Spain. <a href="https://www.upv.es/entidades/ADE/infoweb/fade/info/630155normalc.html">Link to Degree´s curriculum.</a></p>
+    <br>
+    </div>
+
+    <div class="div_personal" id ="skills" hidden="hidden">
+      <h1>Skills and Hobbies</h1>
+      <h2>LANGUAGE SKILLS</h2>
+      <p><b>Mother tongue:</b> SPANISH</p>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th><br></th>
+              <th>Listening</th>
+              <th>Reading</span><br></th>
+              <th>Spoken production</span><br></th>
+              <th>Spoken interaction</span><br></th>
+              <th>Writing</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>English</td>
+              <td>C1</td>
+              <td>C1</td>
+              <td>B2</td>
+              <td>C1</td>
+              <td>B2</td>
+            </tr>
+            <tr>
+              <td>German</td>
+              <td>A1</td>
+              <td>A1</td>
+              <td>A1</td>
+              <td>A1</td>
+              <td>A1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>PROGRAMMING SKILLS</h2>
+      <p> Python | C# | PowerBI | Mixed-Integer Linear Programming | API | R | MVC | .NET | SQL | RPA | Git | HTML | ETL | Agile (Scrum) | JavaScript  </p>
+    </div>
+    
   </div>
 </div>
 
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>Treibs nicht zu bunt</h2>
 </div>
 
+
 </body>
+
+
+
 </html>
