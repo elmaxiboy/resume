@@ -1,11 +1,5 @@
 {
-    "kind": "youtube#searchListResponse",
-    "etag": "OqBFKK7PGiuxPU58fsaj97JeUPY",
-    "regionCode": "CL",
-    "pageInfo": {
-      "totalResults": 19,
-      "resultsPerPage": 19
-    },
+
     "items": [
       {
         "kind": "youtube#searchResult",
