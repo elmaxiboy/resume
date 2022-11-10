@@ -26,9 +26,10 @@ function showButtonDiv(className, id){
   }
 
   function getLastYoutubeVideo(){
-            fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCzgOgt27CN7sE6LqK-bA89w&maxResults=3&order=date&key=AIzaSyAOroVaBFLReOQ9SfUbHfY6EChLvRSCCCE")
+            fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCzgOgt27CN7sE6LqK-bA89w&maxResults=10&order=date&key=AIzaSyAOroVaBFLReOQ9SfUbHfY6EChLvRSCCCE")
             .then((results) => {return results.json()})
             .then((data)=> {
+
 
                 const interestingStuffContainer=document.querySelector(".interesting-stuff");
                 
@@ -58,5 +59,6 @@ function showButtonDiv(className, id){
             }  
             );
             }
-
- getLastYoutubeVideo()       
+ getLastYoutubeVideo()     
+ 
+ 
