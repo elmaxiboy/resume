@@ -21,7 +21,7 @@ function showButtonDiv(className, id){
   }
 
   function embedPDF(id){
-    
+    console.log("Searching for: pdf/"+id+".pdf");
     PDFObject.embed("pdf/"+id+".pdf", "#"+id)
   }
 
