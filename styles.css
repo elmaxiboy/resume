@@ -16,15 +16,20 @@ body {
   position: relative;
 }
 
+.profile-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
 .profile-pic {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  object-fit: cover;
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  opacity: 0.7; /* Add transparency to make the text easier to read */
+  z-index: 1; /* Behind the text */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header h1 {
@@ -90,9 +95,23 @@ body {
   color: white;
 }
 
+.enlargetext {
+  position: relative;
+  z-index: 2; /* In front of the profile pic */
+}
+
 .enlargetext h1 {
-  font-size: 3em;
-  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: #333;
+}
+
+.enlargetext p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+  z-index: 2;
 }
 
 .enlargetext h1:hover {
