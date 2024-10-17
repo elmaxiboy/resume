@@ -105,4 +105,6 @@ function showButtonDiv(className, id){
               
  getLastYoutubeVideo()     
  
- 
+ window.onload = function() {
+    randomizeProfilePicture();
+};
