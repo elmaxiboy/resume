@@ -20,6 +20,26 @@ function showButtonDiv(className, id){
 
   }
 
+
+  function randomizeProfilePicture() {
+
+    const profilePics = [
+        'images/image_2.jpg',
+        'images/image_3.jpg',
+        'images/image_4.jpg',
+        'images/image_5.jpg',
+        'images/image_6.jpg',
+
+    ];
+
+
+    const randomIndex = Math.floor(Math.random() * profilePics.length);
+    const randomPic = profilePics[randomIndex];
+
+
+    document.getElementById("profile-pic").src = randomPic;
+}
+
   function embedPDF(id){
     console.log("Searching for: pdf/"+id+".pdf");
     PDFObject.embed("pdf/"+id+".pdf", "#"+id)
