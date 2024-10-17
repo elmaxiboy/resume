@@ -5,14 +5,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
-  background-color: #f4f4f4;
+  background-color: #EAE7DC; /* Light Sand Beige */
+    color: #4B3F36; /* Earthy Brown text color */
 }
 
 .header {
-  padding: 50px;
+  padding: 30px;
   text-align: center;
-  background: linear-gradient(to right, #ff9900, #ff6600);
-  color: white;
+  background-color: #4B3F36; /* Deep Earth Brown */
+  color: #EAE7DC;
   position: relative;
 }
 
@@ -34,22 +35,24 @@ body {
 
 .header h1 {
   font-size: 40px;
-  margin-top: 120px; /* Adjusted for profile picture */
+}
+
+.header h3 {
+  color: #aeaca4;
 }
 
 
 .navbar {
   display: flex;
   justify-content: center;
-  background-color: #333; /* Dark background for contrast */
+  background-color: #2E4F2C; /* Forest Green */
   padding: 20px; /* Spacing for breathing room */
-  border-radius: 8px; /* Rounded corners */
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: #EAE7DC; /* Light Sand Beige */
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -61,7 +64,8 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background-color: #3A5F3E; /* Dark Moss Green */
+  transform: translateY(-3px);
 }
 
 .row {
@@ -72,14 +76,16 @@ body {
 
 .side {
   flex: 30%;
-  background-color: #f8f9fa;
+  background-color: #DAD7CD; /* Soft Stone Gray */ 
+  color: #4B3F36; /* Earthy Brown text */
   padding: 20px;
 }
 
 .main {
   flex: 70%;
-  background-color: white;
-  padding: 20px;
+  background-color: #6A8D92; /* Mountain Blue */
+    padding: 20px;
+    color: #EAE7DC;
 }
 
 .fakeimg, .smallimg, .youtube-thumbnail {
@@ -91,9 +97,27 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: #333;
-  color: white;
+  background-color: #4B3F36; /* Deep Earth Brown */
+    color: #EAE7DC;
 }
+
+.div_personal h2 {
+  position: relative;
+  padding-left: 20px; /* Space for the custom bullet */
+  color: #EAE7DC; /* Make the text a subtle blue */
+}
+
+/* Add a blue bullet point before each job title */
+.div_personal h2::before {
+  content: '|';  /* Pipe symbol as bullet */
+  position: absolute;
+  left: 0; /* Place it before the text */
+  color: #004080; /* A slightly brighter blue for the bullet */
+  font-size: 20px; /* Make it larger for emphasis */
+  font-weight: bold;
+  top: 0;
+}
+
 
 .enlargetext {
   position: relative;
@@ -176,8 +200,8 @@ height: 100%;
 
 
 .btn_personal {
-  background-color: #007bff; /* Primary color */
-  color: white; /* White text for contrast */
+  background-color: #2E4F2C; /* Forest Green */
+  color: #EAE7DC; /* Light Sand Beige */
   border: none; /* Remove borders */
   padding: 12px 20px; /* Space around the text */
   margin: 0 10px; /* Spacing between buttons */
@@ -189,13 +213,13 @@ height: 100%;
 }
 
 .btn_personal:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #3A5F3E; /* Dark Moss Green */
   transform: translateY(-3px); /* Slight lift on hover */
 }
 
 .btn_personal:active {
   transform: translateY(0); /* Reset lift on click */
-  background-color: #004080; /* Even darker shade when clicked */
+  background-color: #3A5F3E;; /* Even darker shade when clicked */
 }
 
 /* Responsive adjustments for small screens */
