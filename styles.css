@@ -33,6 +33,13 @@ body {
 }
 
 
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333; /* Dark background for contrast */
+  padding: 20px; /* Spacing for breathing room */
+  border-radius: 8px; /* Rounded corners */
+}
 
 .navbar a {
   float: left;
