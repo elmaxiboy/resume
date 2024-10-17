@@ -34,6 +34,24 @@ body {
 
 
 
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -87,6 +105,7 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+
 
   .profile-pic {
     top: 30px;
