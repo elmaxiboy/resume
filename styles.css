@@ -185,12 +185,12 @@ height: 100%;
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
-  font-size: 18px;
+  font-size: 16px; /* Reduced font size for better fit */
   text-align: left;
 }
 
 .table th, .table td {
-  padding: 12px;
+  padding: 10px; /* Reduced padding for smaller screens */
   background-color: #EAE0CC; /* Light earthy tone */
   color: #3E4A3D; /* Darker earthy tone */
   border: 1px solid #A0937D; /* Subtle borders */
@@ -204,6 +204,34 @@ height: 100%;
 
 .table tr:nth-child(even) {
   background-color: #F4F1E1; /* Alternating row background */
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+  .table table {
+    font-size: 14px; /* Smaller font size for tablets */
+  }
+
+  .table th, .table td {
+    padding: 8px; /* Reduced padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .table table {
+    font-size: 12px; /* Smaller font size for phones */
+  }
+
+  .table th, .table td {
+    padding: 6px; /* Even smaller padding for phones */
+  }
+
+  /* Ensure table doesn't overflow on small screens */
+  .table table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
 
 
@@ -253,7 +281,6 @@ height: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
-
 /* Icons container */
 .skills-container {
   display: flex;
@@ -299,3 +326,25 @@ height: 100%;
 .skills-container img:nth-child(8) { animation-delay: 1.4s; }
 .skills-container img:nth-child(9) { animation-delay: 1.6s; }
 .skills-container img:nth-child(10) { animation-delay: 1.8s; }
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .skill-logo {
+    width: 40px; /* Slightly smaller icons */
+    height: 40px;
+  }
+  .skills-container {
+    gap: 15px; /* Reduced gap between icons */
+  }
+}
+
+/* Media query for mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .skill-logo {
+    width: 30px; /* Even smaller icons for small screens */
+    height: 30px;
+  }
+  .skills-container {
+    gap: 10px; /* Smaller gap between icons */
+  }
+}
