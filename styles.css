@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   background-color: #f4f4f4;
 }
@@ -183,4 +183,15 @@ height: 100%;
       margin: 10px 0; /* Add vertical margin between buttons */
       width: 80%; /* Make buttons take up more space */
   }
+}
+/* Font for headers */
+.header h1, .navbar a, .btn_personal, .footer h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+/* Button text */
+.btn_personal {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
