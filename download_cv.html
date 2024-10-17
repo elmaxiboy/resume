@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Download CV</title>
+<title>Max Escobar</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"  href="styles.css"  />
-<script type="text/javascript" src="scripts.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js"></script>
+<meta name="keywords" content="portfolio-website" />
+<link rel="stylesheet" href="styles.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <div class="header">
-    <div class="enlargetext"><h1>Mi nombre es Max</h1></div>
-  <p>Wazup??</p>
+    <img id= "profile-pic" src="images/image_4.jpg" alt="Max Profile Picture" class="profile-pic"/>
+    <div class="enlargetext"><h1>Max Escobar Viegas</h1></div>
+    <p>Programming 🧑🏻‍💻| Music 🎸| Climbing 🧗🏼</p>
 </div>
 
 <div class="navbar">
-  <a href="index.html">CV</a>
-  <a href="maxiboy.html">Maxiboy</a>
+  <a href="index.html">Curriculum</a>
+  <a href="maxiboy.html">Presskit</a>
   <a href="download_cv.html" class="right">CV download</a>
 </div>
 
 <div class="row">
   <div class="side">
     <h2>About Me</h2>
-    <img class= smallimg src="images/image_2.jpg" >
+    <img class="smallimg" src="images/image_2.jpg" alt="Memory Collecting">
     <p>Collecting memories since '95. I spend most of my time doing things that I don't completely understand. To control my expectations, I tend to think that everything is a Proof of Concept of something bigger (or smaller). When I don't know what else to do, I plan a trip or write a song.</p>
-    <h3>This might interest you:</h3>
-    <div class="interesting-stuff">
+    <h3>Check it out 🤙🏼:</h3>
 
-    </div>
+    <div class="interesting-stuff"></div>
   </div>
+
   <div class="main">
-    <div class= cv id="cv">
-      <script> embedPDF("cv")</script>     
-    </div>
-  </div>
 
+
+<div class= cv id="cv">
+    <script> embedPDF("cv")</script>     
+  </div>
     
 </div>
 
 <div class="footer">
   <h2>Treibs nicht zu bunt 🪂</h2>
+  <p>Made with 🍺 during my free time</p>
 </div>
 
+<script type="text/javascript" src="scripts.js"></script>
 
 </body>
-
-
-
 </html>
+
+
+
