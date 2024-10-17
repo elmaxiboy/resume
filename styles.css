@@ -180,23 +180,31 @@ height: 100%;
 ;
 } 
 
+/* Table styling */
 .table table {
-  border:1px solid #b3adad;
-  border-collapse:collapse;
-  padding:5px;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
 }
+
+.table th, .table td {
+  padding: 12px;
+  background-color: #EAE0CC; /* Light earthy tone */
+  color: #3E4A3D; /* Darker earthy tone */
+  border: 1px solid #A0937D; /* Subtle borders */
+}
+
 .table th {
-  border:1px solid #b3adad;
-  padding:5px;
-  background: #f0f0f0;
-  color: #313030;
+  background-color: #9E8F7E; /* Darker earth tone for header */
+  color: white;
+  font-weight: 600;
 }
-.table td {
-  border:1px solid #b3adad;
-  text-align:center;
-  padding:5px;
-  background: #ffffff;
-  color: #313030;}
+
+.table tr:nth-child(even) {
+  background-color: #F4F1E1; /* Alternating row background */
+}
 
 
 .btn_personal {
@@ -246,20 +254,47 @@ height: 100%;
   font-weight: 500;
 }
 
+/* Icons container */
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* Adds space between logos */
-  justify-content: space-around; /* Distributes space between logos */
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
+/* Brown colored icons */
 .skill-logo {
-  width: 50px;  /* Adjust the size */
-  height: auto;
-  margin: 10px;
-  transition: transform 0.2s; /* Smooth zoom effect */
+  width: 50px;
+  height: 50px;
+  filter: sepia(1) saturate(500%) hue-rotate(20deg); /* Brown tint */
+  transition: transform 0.5s ease; /* Smooth transition for movement */
 }
 
+/* Icon hover effect */
 .skill-logo:hover {
-  transform: scale(1.2); /* Zoom effect on hover */
+  transform: rotate(20deg) scale(1.1); /* Rotate and enlarge on hover */
+  cursor: pointer;
 }
+
+/* Keyframes for icon shuffling/movement */
+@keyframes shuffleIcons {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Apply animation to the skill logos */
+.skills-container img {
+  animation: shuffleIcons 3s ease-in-out infinite;
+}
+
+/* Randomize animation delay so they don't move simultaneously */
+.skills-container img:nth-child(1) { animation-delay: 0s; }
+.skills-container img:nth-child(2) { animation-delay: 0.2s; }
+.skills-container img:nth-child(3) { animation-delay: 0.4s; }
+.skills-container img:nth-child(4) { animation-delay: 0.6s; }
+.skills-container img:nth-child(5) { animation-delay: 0.8s; }
+.skills-container img:nth-child(6) { animation-delay: 1s; }
+.skills-container img:nth-child(7) { animation-delay: 1.2s; }
+.skills-container img:nth-child(8) { animation-delay: 1.4s; }
+.skills-container img:nth-child(9) { animation-delay: 1.6s; }
