@@ -32,28 +32,7 @@ body {
   margin-top: 120px; /* Adjusted for profile picture */
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-}
 
-.navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.navbar a.right {
-  float: right;
-}
-
-.navbar a:hover {
-  background-color: #555;
-}
 
 .row {
   display: flex;
@@ -108,10 +87,6 @@ body {
 }
 
 @media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width: 100%;
-  }
 
   .profile-pic {
     top: 30px;
@@ -135,3 +110,47 @@ height: 100%;
 
 ;
 } 
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333; /* Dark background for contrast */
+  padding: 20px; /* Spacing for breathing room */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.btn_personal {
+  background-color: #007bff; /* Primary color */
+  color: white; /* White text for contrast */
+  border: none; /* Remove borders */
+  padding: 12px 20px; /* Space around the text */
+  margin: 0 10px; /* Spacing between buttons */
+  font-size: 16px; /* Increase font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 5px; /* Smooth button edges */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and active effect */
+}
+
+.btn_personal:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.btn_personal:active {
+  transform: translateY(0); /* Reset lift on click */
+  background-color: #004080; /* Even darker shade when clicked */
+}
+
+/* Responsive adjustments for small screens */
+@media screen and (max-width: 600px) {
+  .navbar {
+      flex-direction: column; /* Stack buttons vertically on smaller screens */
+      align-items: center;
+  }
+
+  .btn_personal {
+      margin: 10px 0; /* Add vertical margin between buttons */
+      width: 80%; /* Make buttons take up more space */
+  }
+}
