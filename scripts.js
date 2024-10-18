@@ -108,3 +108,35 @@ function showButtonDiv(className, id){
  window.onload = function() {
     randomizeProfilePicture();
 };
+
+function typeText() {
+    const sentences = [
+      'Learning by doing...',
+      'Lernen beim Tun...',
+      'Aprender haciendo...',
+    ];
+  
+    let index = 0;
+    let text = '';
+  
+    function type() {
+      if (index < text.length) {
+        document.getElementById('typing-effect').textContent += text.charAt(index);
+        index++;
+        setTimeout(type, 150); // Typing speed
+      } else {
+        setTimeout(() => {
+          document.getElementById('typing-effect').textContent = ''; // Clear text
+          index = 0; // Reset index
+          text = sentences[Math.floor(Math.random() * sentences.length)]; // Select a new random sentence
+          setTimeout(type, 1000); // Wait before typing again
+        }, 2000); // Pause before resetting
+      }
+    }
+  
+    text = sentences[Math.floor(Math.random() * sentences.length)]; // Initialize with random sentence
+    type();
+  }
+  
+  window.onload = typeText;
+  
