@@ -132,5 +132,9 @@ function typeText() {
   
   window.onload = typeText;
   
-  
+  function toggleNavbar() {
+    const navbar = document.getElementById('navbar-links');
+    navbar.classList.toggle('active'); // Toggle the 'active' class
+}
+
   
