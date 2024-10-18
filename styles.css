@@ -5,7 +5,8 @@
 body {
   margin: 0;
   background-color: #EAE7DC; /* Light Sand Beige */
-    color: #4B3F36; /* Earthy Brown text color */
+  color: #4B3F36; /* Earthy Brown text color */
+  font-family: 'Roboto', sans-serif;
 }
 
 /* HEADER */
@@ -55,6 +56,13 @@ body {
   background-color: #4B3F36; 
   padding: 15px; /* Spacing for breathing room */
  
+}
+
+.main {
+  flex: 70%;
+  background-color: #6A8D92; /* Mountain Blue */
+  padding: 20px;
+  color: #EAE7DC;
 }
 
 .navbar a {
@@ -143,12 +151,7 @@ body {
 
 
 
-.main {
-  flex: 70%;
-  background-color: #6A8D92; /* Mountain Blue */
-    padding: 20px;
-    color: #EAE7DC;
-}
+
 
 .smallimg, .youtube-thumbnail {
   width: 100%;
