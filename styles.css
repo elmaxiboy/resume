@@ -14,27 +14,39 @@ body {
 
 .header {
   
-  padding: 30px;
-  text-align: center;
-  background-color: #2E4F2C; /* Deep Earth Brown */
+  text-align: center; 
   color: #EAE7DC;
   position: relative;
+  background-image: url("images/image_3.jpg");
+  background-size: cover;
+  background-position:35% 35%;
+  background-repeat: no-repeat;
+  padding: 80px;
+ 
 }
 
 .header h1 {
   font-size: 30px;
+  font-weight:bold;
+  position: relative; /* Position the text above the image */
+  background-color: #eae7dcde;
+  color: #4B3F36;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding-inline: 10px;
 }
 
 .header h3 {
-  color: #aeaca4;
+  color: #302822;
+  background-color: #eae7dcde;
+  display: inline-block;
+  border-radius: 5px;
+  padding-inline: 10px;
+  font-weight:400;
+;
 }
 
-.typing-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
@@ -88,38 +100,34 @@ body {
 .buttons_bar {
   display: flex;
   padding: 5px 5px; /* Optional: add some padding */
-  background-color: #2e4f2c6e; /* Optional: background color to match your palette */
+  background-color:#4b3f36ab; /* Optional: background color to match your palette */
   border-radius: 5px;
-  color: #EAE7DC; /* Light Sand Beige */
+  color: #4B3F36; /* Light Sand Beige */
   justify-content: center;
 }
 
 .btn_personal {
-  background-color: #2E4F2C; /* Forest Green */
-  color: #EAE7DC; /* Light Sand Beige */
+  background-color: #EAE7DC; /* Forest Green */
+  color: #4B3F36; /* Light Sand Beige */
   font-size: 13px; /* Font size */
   border-radius: 5px; /* Smooth button edges */
   cursor: pointer; /* Hand cursor on hover */
   transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and active effect */
-  
-
+  text-decoration: none;
   padding: 10px 10px;
   margin: 5px;
 
-  /* Additional reset styles to remove any unwanted appearance */
-  border: none; /* Removes any default border */
-  box-shadow: none; /* Removes any box shadow */
-  outline: none; /* Removes focus outline */
 }
 
 .btn_personal:hover {
-  background-color: #3A5F3E; /* Dark Moss Green */
+  background-color: #dddacf; /* Dark Moss Green */
   transform: translateY(-3px); /* Slight lift on hover */
+  text-decoration: underline;
+  color: #4B3F36;
 }
 
 .btn_personal:active {
   transform: translateY(0); /* Reset lift on click */
-  background-color: #3A5F3E;; /* Even darker shade when clicked */
 }
 
 .profile-wrapper {
@@ -151,6 +159,15 @@ body {
   border-radius: 10px;
   color:#EAE7DC;
   padding: 10px;
+}
+
+.side h2,h3{
+  background-color: #6A8D92;
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 10px;
+  display: inline-block;
+  color: #DAD7CD;
 }
 
 .interesting-stuff{
@@ -317,6 +334,17 @@ height: 100%;
   .buttons_bar{
     flex-direction: column;
     align-items: center;
+  }
+  .btn_personal{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+    text-align: center;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; 
+    margin-inline: 10px;
+    
   }
 
 }
