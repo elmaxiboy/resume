@@ -2,15 +2,7 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600; /* Use the bolder weight (600) for headings */
-}
 
-p, a, li {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400; /* Set a light weight (100) for body text */
-}
 
 body {
   margin: 0;
@@ -53,7 +45,7 @@ body {
   display: inline-block;
   border-radius: 5px;
   padding-inline: 10px;
-  font-weight: bolder
+  font-weight: lighter
 ;
 }
 
@@ -126,6 +118,7 @@ body {
   text-decoration: none;
   padding: 10px 10px;
   margin: 5px;
+  font-weight: bold;
 
 }
 
@@ -355,6 +348,13 @@ height: 100%;
     align-items: center; 
     margin-inline: 10px;
     
+  }
+  .side{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+
   }
 
 }
