@@ -2,12 +2,22 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600; /* Use the bolder weight (600) for headings */
+}
+
+p, a, li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Set a light weight (100) for body text */
+}
+
 body {
   margin: 0;
   background-color: #EAE7DC; /* Light Sand Beige */
   color: #4B3F36; /* Earthy Brown text color */
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
+  font-family: 'Roboto';
+  font-weight: 400;
 }
 
 /* HEADER */
@@ -21,13 +31,13 @@ body {
   background-size: cover;
   background-position:35% 35%;
   background-repeat: no-repeat;
-  padding: 80px;
+  padding: 20px;
+
  
 }
 
 .header h1 {
   font-size: 30px;
-  font-weight:bold;
   position: relative; /* Position the text above the image */
   background-color: #eae7dcde;
   color: #4B3F36;
@@ -43,7 +53,7 @@ body {
   display: inline-block;
   border-radius: 5px;
   padding-inline: 10px;
-  font-weight:400;
+  font-weight: bolder
 ;
 }
 
