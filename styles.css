@@ -100,12 +100,12 @@ body {
 }
 
 .buttons_bar {
-  display: flex;
   padding: 5px 5px; /* Optional: add some padding */
   background-color:#4b3f36ab; /* Optional: background color to match your palette */
   border-radius: 5px;
   color: #4B3F36; /* Light Sand Beige */
   justify-content: center;
+  display:flex;
 }
 
 .btn_personal {
@@ -119,6 +119,7 @@ body {
   padding: 10px 10px;
   margin: 5px;
   font-weight: bold;
+  
 
 }
 
@@ -187,8 +188,7 @@ body {
 
 .main > * {
   flex-shrink: 2;
-  width: auto;
-  height: auto;
+
 }
 
 .smallimg, .youtube-thumbnail {
@@ -221,6 +221,10 @@ margin: 5px;
   position: relative;
   padding-left: 20px; /* Space for the custom bullet */
   color: #EAE7DC; /* Make the text a subtle blue */
+  background-color:#6d58478f;
+  display: inline-block;
+  border-radius: 7px ;
+  padding: 10px;
 }
 
 .div_personal h5 {
@@ -238,17 +242,6 @@ margin: 5px;
   text-align: justify;
 }
 
-
-/* Add a blue bullet point before each job title */
-.div_personal h2::before {
-  content: '|';  /* Pipe symbol as bullet */
-  position: absolute;
-  left: 0; /* Place it before the text */
-  color: #004080; /* A slightly brighter blue for the bullet */
-  font-size: 20px; /* Make it larger for emphasis */
-  font-weight: bold;
-  top: 0;
-}
 
 
 .language p{
@@ -284,7 +277,7 @@ height: 100%;
 .skill-logo {
   width: 60px;
   height: 60px;
-  filter: invert(22%) sepia(12%) saturate(846%) hue-rotate(343deg) brightness(99%) contrast(87%); /* Brown tint */
+  filter: invert(89%) sepia(2%) saturate(993%) hue-rotate(350deg) brightness(111%) contrast(84%);
   transition: transform 0.5s ease; /* Smooth transition for movement */
 }
 
