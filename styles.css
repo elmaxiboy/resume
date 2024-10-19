@@ -10,11 +10,6 @@ body {
   font-weight: 600;
 }
 
-.wavy-container {
-  position: relative;
-  background-color: #6d5847;
-  clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%); /* Creates a wave effect */
-}
 /* HEADER */
 
 .header {
