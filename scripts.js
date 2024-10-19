@@ -66,7 +66,7 @@ function showButtonDiv(className, id){
                     for (var a=[],i=0;i<videos.length;++i) a[i]=i;
                     const shuffledArray=shuffle(a);
 
-                    maxVideos=3
+                    maxVideos=1
                     count=0
                     shuffledArray.forEach(index => {
 

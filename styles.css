@@ -152,6 +152,10 @@ body {
   color:#EAE7DC;
   padding: 10px;
 }
+
+.side fakeimg{
+  text-align: center;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -178,16 +182,19 @@ body {
   padding: 20px;
   text-align: center;
   background-color: #4B3F36; /* Deep Earth Brown */
-    color: #EAE7DC;
+  color: #EAE7DC;
 }
 
 .footer img{
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   filter: invert(100%) sepia(44%) saturate(339%) hue-rotate(315deg) brightness(96%) contrast(92%);
 }
 .footer a{
 margin: 5px;
+}
+.footer p{
+  font-size: 15px;
 }
 
 .div_personal h2 {
@@ -257,7 +264,7 @@ height: 100%;
 .skill-logo {
   width: 60px;
   height: 60px;
-  filter: sepia(1) saturate(500%) hue-rotate(30deg); /* Brown tint */
+  filter: invert(22%) sepia(12%) saturate(846%) hue-rotate(343deg) brightness(99%) contrast(87%); /* Brown tint */
   transition: transform 0.5s ease; /* Smooth transition for movement */
 }
 
