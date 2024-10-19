@@ -181,6 +181,15 @@ body {
     color: #EAE7DC;
 }
 
+.footer img{
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(44%) saturate(339%) hue-rotate(315deg) brightness(96%) contrast(92%);
+}
+.footer a{
+margin: 5px;
+}
+
 .div_personal h2 {
   position: relative;
   padding-left: 20px; /* Space for the custom bullet */
