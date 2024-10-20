@@ -150,8 +150,17 @@ body {
 
 }
 
+.about_border{
+  border:3px solid #6A8D92;
+  margin: 10px;
+  border-radius: 8px;
+}
+
 .side {
   flex: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: #DAD7CD; /* Soft Stone Gray */ 
   color: #4B3F36; /* Earthy Brown text */
   padding: 20px;
@@ -164,6 +173,7 @@ body {
   border-radius: 10px;
   color:#EAE7DC;
   padding: 10px;
+  margin: 20px;
 }
 
 .side h2,h3{
@@ -248,10 +258,9 @@ body {
 
 
 .smallimg, .youtube-thumbnail {
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
-  margin: 10px auto; /* Centers the image horizontally */
-  display: block; 
+  margin: 10px;
 }
 
 .footer {
@@ -353,7 +362,7 @@ height: 100%;
     gap: 10px;
   }
   .smallimg, .youtube-thumbnail {
-    width: 80%;
+    width: 85%;
   }
 
   .row {
