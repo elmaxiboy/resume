@@ -276,6 +276,14 @@ body {
   border-radius: 10px;
   margin: 10px;
 }
+.video-title{
+  color: #EAE7DC; /* Make the text a subtle blue */
+  background-color: #c79c2f7a;
+  padding: 10px;
+  border-radius: 7px;
+  margin: 20px;
+
+}
 
 .footer {
   padding: 20px;
