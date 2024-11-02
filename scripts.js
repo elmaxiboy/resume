@@ -72,6 +72,7 @@ function showButtonDiv(className, id){
                     for (var a=[],i=0;i<videos.length;++i) a[i]=i;
                     const shuffledArray=shuffle(a);
 
+                    console.log(screen.width)
                     if (screen.width<=900){
                       maxVideos=snapshot_amount_small
                       
