@@ -250,7 +250,7 @@ body {
 }
 
 .div_personal h5 {
-  color: #EAE7DC; /* Make the text a subtle blue */
+  color: #EAE7DC; 
   background-color: #c79c2f7a;
   padding: 10px;
   border-radius: 7px;
@@ -278,7 +278,7 @@ body {
 }
 .video-title{
   color: #EAE7DC; /* Make the text a subtle blue */
-  background-color: #c79c2f7a;
+  background-color: #6d58478f;
   padding: 10px;
   border-radius: 7px;
   margin: 20px;
