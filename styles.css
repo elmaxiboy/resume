@@ -1,3 +1,7 @@
+:root {
+  --snapshot-amount: 2;
+}
+
 
 * {
   box-sizing: border-box;
