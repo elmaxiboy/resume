@@ -351,6 +351,7 @@ height: 100%;
 .skills-container img:nth-child(8) { animation-delay: 1.4s; }
 .skills-container img:nth-child(9) { animation-delay: 1.6s; }
 .skills-container img:nth-child(10) { animation-delay: 1.8s; }
+.skills-container img:nth-child(11) { animation-delay: 2.0s; }
 
 /* Media query for tablets and medium screens (max-width: 1000px) */
 @media (max-width: 900px) {
