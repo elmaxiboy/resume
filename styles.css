@@ -421,6 +421,10 @@ height: 100%;
     align-items: center; 
     text-align: center;
 
+
+    :root {
+      --snapshot-amount: 1;
+    }
   }
 
 }
