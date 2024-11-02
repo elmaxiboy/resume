@@ -1,7 +1,8 @@
 const root = document.documentElement;
 
 // Access a CSS variable's value
-const snapshot_amount = getComputedStyle(root).getPropertyValue('--snapshot-amount');
+const snapshot_amount_big = getComputedStyle(root).getPropertyValue('--snapshot-amount-big');
+const snapshot_amount_small= getComputedStyle(root).getPropertyValue('--snapshot-amount-small');
 
 function showButtonDiv(className, id){
 
@@ -71,7 +72,14 @@ function showButtonDiv(className, id){
                     for (var a=[],i=0;i<videos.length;++i) a[i]=i;
                     const shuffledArray=shuffle(a);
 
-                    maxVideos=snapshot_amount
+                    if (screen.width<=900){
+                      maxVideos=snapshot_amount_small
+                      
+                    }
+                    else{
+                      maxVideos=snapshot_amount_big
+                    }
+                    
                     count=0
                     shuffledArray.forEach(index => {
 

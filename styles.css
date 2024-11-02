@@ -1,5 +1,6 @@
 :root {
-  --snapshot-amount: 2;
+  --snapshot-amount-big: 2;
+  --snapshot-amount-small: 1;
 }
 
 
@@ -422,9 +423,6 @@ height: 100%;
     text-align: center;
 
 
-    :root {
-      --snapshot-amount: 1;
-    }
   }
 
 }
