@@ -243,7 +243,7 @@ body {
 }
 
 .div_personal h2,h3 {
-  color: #EAE7DC; /* Make the text a subtle blue */
+  color: #EAE7DC; 
   background-color:#6d58478f;
   border-radius: 7px ;
   padding: 10px;
@@ -283,6 +283,7 @@ body {
   padding: 10px;
   border-radius: 7px;
   margin: 20px;
+  display: flex;
 
 }
 
