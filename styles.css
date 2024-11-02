@@ -25,8 +25,18 @@ body {
   background-position:35% 35%;
   background-repeat: no-repeat;
   padding: 20px;
-
+  animation: moveBackground 30s ease-in-out infinite alternate;
  
+}
+
+
+@keyframes moveBackground {
+  0% {
+    background-position: 35% 0%;
+  }
+  100% {
+    background-position: 35% 100%;
+  }
 }
 
 .header h1 {
