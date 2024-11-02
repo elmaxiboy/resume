@@ -283,8 +283,8 @@ body {
   padding: 10px;
   border-radius: 7px;
   margin: 20px;
-  display: flex;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
 
 }
 
