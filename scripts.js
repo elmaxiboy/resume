@@ -86,7 +86,7 @@ function showButtonDiv(className, id){
                             let videoThumbnail = videos[index].snippet.thumbnails.high.url;
                             let videoUrl= "https://www.youtube.com/watch?v="+videos[index].id.videoId ;
                             let videoTitle = videos[index].snippet.title                  
-                            interestingStuffContainer.innerHTML+= '<div class="fakeimg" > <a href='+videoUrl+' target="_blank" rel="noopener noreferrer"> <img class= "youtube-thumbnail" src='+videoThumbnail+' ><br></a><a class= video-title>' +videoTitle+ '</a></div><br>'
+                            interestingStuffContainer.innerHTML+= '<div class="fakeimg" > <a href='+videoUrl+' target="_blank" rel="noopener noreferrer"> <img class= "youtube-thumbnail" src='+videoThumbnail+' ><br></a><div class= video-title>' +videoTitle+ '</div></div><br>'
                             count+=1
 
                         }
