@@ -126,7 +126,7 @@ function showButtonDiv(className, id){
 function typeText() {
     const sentences = [
       'Learning by doing...',
-      'Lernen beim Tun...',
+      'Viel zu tun...',
       'Aprender haciendo...',
     ];
   
