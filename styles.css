@@ -342,13 +342,8 @@ margin: 5px;
   text-align: center;
   margin-inline: 50px;
 }
-.presskit {
 
-  width: 100%;
-  height: 100%;
-  
-  ;
-} .cv {
+.cv, .de, .eng, .presskit {
 
 width: 100%;
 height: 100%;
