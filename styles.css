@@ -150,6 +150,32 @@ body {
   transform: translateY(0); /* Reset lift on click */
 }
 
+.btn_cv {
+  background-color: #EAE7DC; /* Forest Green */
+  color: #4B3F36; /* Light Sand Beige */
+  font-size: 13px; /* Font size */
+  border-radius: 5px; /* Smooth button edges */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover and active effect */
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 5px;
+  font-weight: bold;
+  
+
+}
+
+.btn_cv:hover {
+  background-color: #dddacf; /* Dark Moss Green */
+  transform: translateY(-3px); /* Slight lift on hover */
+  text-decoration: underline;
+  color: #4B3F36;
+}
+
+.btn_cv:active {
+  transform: translateY(0); /* Reset lift on click */
+}
+
 .profile-wrapper {
   position: absolute;
   top: 50%;
