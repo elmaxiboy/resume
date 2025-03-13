@@ -41,9 +41,18 @@
   </div>
 
   <div class="main">
-    <div class= cv id="cv">
-    <script> embedPDF("cv")</script>     
-  </div>
+
+    <div class="buttons_bar">
+      <a class="btn_personal" id="eng" onclick="showButtonDiv(this.className, this.id)">In English</a>
+      <a class="btn_personal" id="de" onclick="showButtonDiv(this.className, this.id)">Auf Deutsch</a>
+    </div>
+
+    <div class=div_personal id="eng">
+    <script> embedPDF("cv_eng","cv")</script>     
+    </div>
+    <div class=div_personal id="de">
+      <script> embedPDF("cv_deutsch","cv")</script>     
+    </div>
     
 </div>
 </div>

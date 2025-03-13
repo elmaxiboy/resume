@@ -46,9 +46,9 @@ function showButtonDiv(className, id){
     document.getElementById("profile-pic").src = randomPic;
 }
 
-  function embedPDF(id){
-    console.log("Searching for: pdf/"+id+".pdf");
-    PDFObject.embed("pdf/"+id+".pdf", "#"+id)
+  function embedPDF(name,id){
+    console.log("Searching for: pdf/"+name+".pdf");
+    PDFObject.embed("pdf/"+name+".pdf", "#"+id)
   }
 
   function getLastYoutubeVideo(){
