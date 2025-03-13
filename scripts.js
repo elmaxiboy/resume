@@ -25,7 +25,27 @@ function showButtonDiv(className, id){
     
 
   }
+  function showButtonDivCV(className, id){
 
+
+    const divClassName = className.replace("btn_","")
+    const arrayOfDivs= document.getElementsByClassName(divClassName)
+
+
+    for (let element of arrayOfDivs){
+        if (element.id==id){
+
+            element.removeAttribute("hidden")
+        }
+
+        else{
+            element.setAttribute("hidden","hidden");
+        }
+
+    }
+    
+
+  }
 
   function randomizeProfilePicture() {
 
