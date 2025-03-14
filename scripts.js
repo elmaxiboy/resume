@@ -33,7 +33,7 @@ function showButtonDiv(className, id){
 
 
     for (let element of arrayOfDivs){
-        if (element.id=="btn_"+id){
+        if ("btn_"+element.id==id){
 
             element.removeAttribute("hidden")
         }
