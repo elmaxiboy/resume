@@ -68,6 +68,7 @@ function showButtonDiv(className, id){
 
   function embedPDF(name,id){
     console.log("Searching for: pdf/"+name+".pdf");
+    const divClassName = id.replace("_btn","")
     PDFObject.embed("pdf/"+name+".pdf", "#"+id)
   }
 
