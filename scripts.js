@@ -29,7 +29,7 @@ function showButtonDiv(className, id){
 
 
     const divClassName = className.replace("btn_","")
-    const arrayOfDivs= document.getElementsByClassName(divClassName)
+    const arrayOfDivs= document.getElementsByClassName("div_"+divClassName)
 
 
     for (let element of arrayOfDivs){

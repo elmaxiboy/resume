@@ -258,7 +258,7 @@ body {
 }
 
 
-.div_personal{
+.div_personal,.div_cv{
   text-align: center;
   flex-direction: column;
 }
